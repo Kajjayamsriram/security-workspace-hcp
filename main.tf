@@ -25,5 +25,5 @@ data "tfe_outputs" "out" {
 }
 
 output "name" {
-  value = data.tfe_outputs.out.nonsensitive_values.ip_list
+  value = data.tfe_outputs.out.values.ip_list
 }
