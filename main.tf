@@ -26,4 +26,5 @@ data "tfe_outputs" "out" {
 
 output "name" {
   value = data.tfe_outputs.out.values.ip_list
+  sensitive = true
 }
